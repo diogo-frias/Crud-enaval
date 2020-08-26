@@ -16,19 +16,21 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Acessar http://localhost:8000
+## Acessando o Django Admin
 
-## Fazendo Login
+É necessário realizar o cadastro das Funções através do Django Admin.  
+```bash
+python manage.py createsuperuser
+```
+Acessar http://localhost:8000/admin
+
+
+## Fazendo Login na aplicação
 Por razões de simplicidade o login foi feito maneira “hard-code”.
+
+Acessar http://localhost:8000
 
 ```
 Login: enaval
 Senha: 123456
 ```
-
-## Acessando o Django Admin (opcional)
-
-```bash
-python manage.py createsuperuser
-```
-Acessar http://localhost:8000/admin
